@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="./css/ordinateur.css" />
+    <link rel="stylesheet" type="text/css" href="./css/tablette.css" />
+    <link rel="stylesheet" type="text/css" href="./css/mobile.css" />
+    <title>Booki</title>
+  </head>
+  <body>
+    <!--Début Haut de page-->
+    <header>
+      <div class="logo_booki">
+        <img
+          src="./images/logo/Booki@3x.png"
+          alt="logo booki"
+          class="booki_logo"
+        />
+      </div>
+      <nav>
+        <ul class="hebergement_et_activites">
+          <li class="hebergement">
+            <a href="#booki-hebergements" class="TXT_h">Hébergements</a>
+          </li>
+          <li class="activite">
+            <a href="#booki-activites" class="TXT_a">Activités</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--Fin Haut de page-->
+    <!--Début Main-->
+    <main>
+      <!--Section 1-->
+      <section>
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p>En plein centre ville ou en pleine nature</p>
+        <form action="index.html" method="get" class="booki-recherche-form">
+          <label for="ville">
+            <i class="fa-solid fa-location-dot"></i>
+          </label>
+          <input
+            type="text"
+            id="ville"
+            class="ville"
+            name="ville"
+            placeholder="Marseille, France"
+          />
+          <button type="submit" class="booki-submit-btn-shearch-form">
+            <span>Rechercher</span>
+          </button>
+        </form>
+        <!--Filtres début-->
+        <div class="booki-filtres">
+          <h3>Filtres</h3>
+          <div class="booki-filtres-contenu">
+            <a href="#" class="booki-filtre">
+              <i class="fa-solid fa-money-bill-wave"></i>
+              <p>Économique</p>
+            </a>
+            <a href="#" class="booki-filtre">
+              <i class="fa-solid fa-child-reaching"></i>
+              <p>Familial</p>
+            </a>
+            <a href="#" class="booki-filtre">
+              <i class="fa-solid fa-heart"></i>
+              <p>Romantique</p>
+            </a>
+            <a href="#" class="booki-filtre">
+              <i class="fa-solid fa-dog"></i>
+              <p>Animaux autorisés</p>
+            </a>
+          </div>
+        </div>
+        <!--Filtres Fin-->
+        <p class="booki-info">
+          <i class="fa-solid fa-info"></i>
+          <span>Plus de 500 logements sont disponibles dans cette ville</span>
+        </p>
+      </section>
+      <!--Section 1 FIN-->
+      <!--Section 2-->
+      <section>
+        <div id="booki-hebergements" class="booki-hebergements">
+          <h2>Hébergements à Marseille</h2>
+          <div class="booki-hebergements-cartes">
+            <!--Cartes herbegemennt-->
+            <a href="#" class="booki-hebergement-carte">
+              <div class="booki-hebergement-carte-img">
+                <img
+                  src="./images/hebergements/4_small/Auberge-la-cannebiere.jpg"
+                  alt="Image Auberge La Cannebière"
+                />
+              </div>
+              <div class="booki-hebergement-carte-infos">
+                <h3 class="booki-hebergement-carte-infos-titre">
+                  Auberge La Cannebière
+                </h3>
+                <p class="booki-hebergement-carte-infos-description">
+                  Nuit à partir de
+                  <span
+                    class="booki-hebergement-carte-infos-description-prix bold"
+                    >25</span
+                  >
+                  <span class="booki-hebergement-carte-infos-description-euro"
+                    >€</span
+                  >
+                </p>
+                <p class="booki-hebergement-carte-infos-etoiles">
+                  <i class="fa-solid fa-star bleu"></i>
+                  <i class="fa-solid fa-star bleu"></i>
+                  <i class="fa-solid fa-star bleu"></i>
+                  <i class="fa-solid fa-star bleu"></i>
+                  <i class="fa-solid fa-star"></i>
+                </p>
+              </div>
+            </a>
+            <a href="#" class="booki-hebergement-carte">
+              <div class="booki-hebergement-carte-img">
+                <img
+                  src="./images/hebergements/4_small/hotel-du-port.jpg"
+                  alt="Image hotel du hotel-du-port"
+                />
+              </div>
+              <div class="booki-hebergement-carte-infos">
+                <h3 class="booki-hebergement-carte-infos-titre">
+                  Hôtel du port
+                </h3>
+                <p class="booki-hebergement-carte-infos-description">
+                  Nuit à partir de
+                  <span class="booki-hebergement-carte-infos-description-prix"
+                    >52</span
+                  >
+                  <span class="booki-hebergement-carte-infos-description-euro"
+                    >€</span
+                  >
+                </p>
+                <p class="booki-hebergement-carte-infos-etoiles">
+                  <i class="fa-solid fa-star bleu"></i>
+                  <i class="fa-solid fa-star bleu"></i>
+                  <i class="fa-solid fa-star bleu"></i>
+                  <i class="fa-solid fa-star bleu"></i>
+                  <i class="fa-solid fa-star bleu"></i>
+                </p>
+              </div>
+            </a>
+            <a href="#" class="booki-hebergement-carte">
+              <div class="booki-hebergement-carte-img">
+                <img
+                  src="./images/hebergements/4_small/hotel-les-mouettes.jpg"
+                  alt="Image Hotel les mouettes"
+                />
+              </div>
+              <div class="booki-hebergement-carte-infos">
+                <h3 class="booki-hebergement-carte-infos-titre">
+                  Hôtel Les mouettes
+                </h3>
+                <p class="booki-hebergement-carte-infos-description">
+                  Nuit à partir de
+                  <span class="booki-hebergement-carte-infos-description-prix"
+                    >76</span
+                  >
+                  <span class="booki-hebergement-carte-infos-description-euro"
+                    >€</span
+                  >
+                </p>
+                <p class="booki-hebergement-carte-infos-etoiles">
+                  <i class="fa-solid fa-star bleu"></i>
+                  <i class="fa-solid fa-star bleu"></i>
+                  <i class="fa-solid fa-star bleu"></i>
+                  <i class="fa-solid fa-star bleu"></i>
+                  <i class="fa-solid fa-star"></i>
+                </p>
+              </div>
+            </a>
+            <a href="#" class="booki-hebergement-carte">
+              <div class="booki-hebergement-carte-img">
+                <img
+                  src="./images/hebergements/4_small/hotel-de-la-mer.jpg"
+                  alt="Image Hotel de la mer"
+                />
+              </div>
+              <div class="booki-hebergement-carte-infos">
+                <h3 class="booki-hebergement-carte-infos-titre">
+                  Hôtel de la mer
+                </h3>
+                <p class="booki-hebergement-carte-infos-description">
+                  Nuit à partir de
+                  <span class="booki-hebergement-carte-infos-description-prix"
+                    >46</span
+                  >
+                  <span class="booki-hebergement-carte-infos-description-euro"
+                    >€</span
+                  >
+                </p>
+                <p class="booki-hebergement-carte-infos-etoiles">
+                  <i class="fa-solid fa-star bleu"></i>
+                  <i class="fa-solid fa-star bleu"></i>
+                  <i class="fa-solid fa-star bleu"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </p>
+              </div>
+            </a>
+            <a href="#" class="booki-hebergement-carte">
+              <div class="booki-hebergement-carte-img">
+                <img
+                  src="./images/hebergements/4_small/auberge-le-panier.jpg"
+                  alt="Image Auberge Le panier"
+                />
+              </div>
+              <div class="booki-hebergement-carte-infos">
+                <h3 class="booki-hebergement-carte-infos-titre">
+                  Auberge Le Panier
+                </h3>
+                <p class="booki-hebergement-carte-infos-description">
+                  Nuit à partir de
+                  <span
+                    class="booki-hebergement-carte-infos-description-prix bold"
+                    >23</span
+                  >
+                  <span class="booki-hebergement-carte-infos-description-euro"
+                    >€</span
+                  >
+                </p>
+                <p class="booki-hebergement-carte-infos-etoiles">
+                  <i class="fa-solid fa-star bleu"></i>
+                  <i class="fa-solid fa-star bleu"></i>
+                  <i class="fa-solid fa-star bleu"></i>
+                  <i class="fa-solid fa-star bleu"></i>
+                  <i class="fa-solid fa-star"></i>
+                </p>
+              </div>
+            </a>
+            <a href="#" class="booki-hebergement-carte">
+              <div class="booki-hebergement-carte-img">
+                <img
+                  src="./images/hebergements/4_small/hotel-chez-amina.jpg"
+                  alt="Image Hotel chez amina"
+                />
+              </div>
+              <div class="booki-hebergement-carte-infos">
+                <h3 class="booki-hebergement-carte-infos-titre">
+                  Hôtel chez Amina
+                </h3>
+                <p class="booki-hebergement-carte-infos-description">
+                  Nuit à partir de
+                  <span class="booki-hebergement-carte-infos-description-prix"
+                    >96</span
+                  >
+                  <span class="booki-hebergement-carte-infos-description-euro"
+                    >€</span
+                  >
+                </p>
+                <p class="booki-hebergement-carte-infos-etoiles">
+                  <i class="fa-solid fa-star bleu"></i>
+                  <i class="fa-solid fa-star bleu"></i>
+                  <i class="fa-solid fa-star bleu"></i>
+                  <i class="fa-solid fa-star bleu"></i>
+                  <i class="fa-solid fa-star bleu"></i>
+                </p>
+              </div>
+            </a>
+          </div>
+          <a href="#" class="booki-hebergements-afficher-plus">Afficher plus</a>
+        </div>
+        <div id="plus-populaire" class="booki-plus-populaires">
+          <h2>
+            Les plus populaires
+            <i class="fa-solid fa-star"></i>
+          </h2>
+          <div class="booki-plus-populaires-cartes">
+            <a href="#" class="booki-plus-populaire-carte">
+              <div class="booki-plus-populaire-carte-img">
+                <img
+                  src="./images/hebergements/4_small/hotel-le-soleil-du-matin.jpg"
+                  alt="Image le soleil du matin"
+                />
+              </div>
+              <div class="booki-plus-populaire-carte-infos">
+                <h3 class="booki-plus-populaire-carte-infos-titre">
+                  Hôtel Le soleil du matin
+                </h3>
+                <p class="booki-plus-populaire-carte-infos-description">
+                  <span>Nuit à partir de</span>
+                  <span
+                    class="booki-plus-populaire-carte-infos-description-prix"
+                    >128</span
+                  >
+                  <span
+                    class="booki-plus-populaire-carte-infos-description-euro"
+                    >€</span
+                  >
+                </p>
+                <p class="booki-plus-populaire-carte-infos-etoile">
+                  <i class="fa-solid fa-star bleu"></i>
+                  <i class="fa-solid fa-star bleu"></i>
+                  <i class="fa-solid fa-star bleu"></i>
+                  <i class="fa-solid fa-star bleu"></i>
+                  <i class="fa-solid fa-star bleu"></i>
+                </p>
+              </div>
+            </a>
+            <a href="#" class="booki-plus-populaire-carte">
+              <div class="booki-plus-populaire-carte-img">
+                <img
+                  src="./images/hebergements/4_small/au-coeur-de-leau-chambres-dhotes.jpg"
+                  alt="Image au coeur de l'eau chambres d'hotes"
+                />
+              </div>
+              <div class="booki-plus-populaire-carte-infos">
+                <h3 class="booki-plus-populaire-carte-infos-titre">
+                  Au coeur de l'eau Chambres d'hôtes
+                </h3>
+                <p class="booki-plus-populaire-carte-infos-description">
+                  <span>Nuit à partir de</span>
+                  <span
+                    class="booki-plus-populaire-carte-infos-description-prix"
+                    >71</span
+                  >
+                  <span
+                    class="booki-plus-populaire-carte-infos-description-euro"
+                    >€</span
+                  >
+                </p>
+                <p class="booki-plus-populaire-carte-infos-etoile-2">
+                  <i class="fa-solid fa-star bleu"></i>
+                  <i class="fa-solid fa-star bleu"></i>
+                  <i class="fa-solid fa-star bleu"></i>
+                  <i class="fa-solid fa-star bleu"></i>
+                  <i class="fa-solid fa-star"></i>
+                </p>
+              </div>
+            </a>
+            <a href="#" class="booki-plus-populaire-carte">
+              <div class="booki-plus-populaire-carte-img">
+                <img
+                  src="./images/hebergements/4_small/hotel-tout-bleu-et-blanc.jpg"
+                  alt="Image hotel tout bleu et blanc"
+                />
+              </div>
+              <div class="booki-plus-populaire-carte-infos">
+                <h3 class="booki-plus-populaire-carte-infos-titre">
+                  Hôtel tout bleu et Blanc
+                </h3>
+                <p class="booki-plus-populaire-carte-infos-description">
+                  <span>Nuit à partir de</span>
+                  <span
+                    class="booki-plus-populaire-carte-infos-description-prix"
+                    >68</span
+                  >
+                  <span
+                    class="booki-plus-populaire-carte-infos-description-euro"
+                    >€</span
+                  >
+                </p>
+                <p class="booki-plus-populaire-carte-infos-etoile">
+                  <i class="fa-solid fa-star bleu"></i>
+                  <i class="fa-solid fa-star bleu"></i>
+                  <i class="fa-solid fa-star bleu"></i>
+                  <i class="fa-solid fa-star bleu"></i>
+                  <i class="fa-solid fa-star"></i>
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!--Section 2 FIN-->
+      <!--Section 3-->
+      <section id="booki-activites">
+        <h2>Activités à Marseille</h2>
+        <div class="booki-activites-cartes">
+          <div class="booki-activites-carte">
+            <a href="#" class="booki-activites-cartes-0">
+              <div class="booki-activites-cartes-img">
+                <img
+                  src="./images/activites/4_small/vieux-port.jpg"
+                  alt="image vieux port"
+                />
+              </div>
+              <div class="booki-activites-cartes-infos">
+                <p class="booki-activites-cartes-infos-description">
+                  Vieux port
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="booki-activites-carte">
+            <a href="#" class="booki-activites-cartes-1">
+              <div class="booki-activites-cartes-img">
+                <img
+                  src="./images/activites/4_small/fort-de-pomègues.jpg"
+                  alt="image fort de pomègues"
+                />
+              </div>
+              <div class="booki-activites-cartes-infos">
+                <p class="booki-activites-cartes-infos-description">
+                  Fort de Pomègues
+                </p>
+              </div>
+            </a>
+            <a href="#" class="booki-activites-cartes-2">
+              <div class="booki-activites-cartes-img">
+                <img
+                  src="./images/activites/4_small/iles-du-frioul.jpg"
+                  alt="image iles du frioul"
+                />
+              </div>
+              <div class="booki-activites-cartes-infos">
+                <p class="booki-activites-cartes-infos-description">
+                  îles du Frioul
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="booki-activites-carte">
+            <a href="#" class="booki-activites-cartes-0">
+              <div class="booki-activites-cartes-img">
+                <img
+                  src="./images/activites/4_small/parc-national-des-calanques.jpg"
+                  alt="image parc national des calanques"
+                />
+              </div>
+              <div class="booki-activites-cartes-infos">
+                <p class="booki-activites-cartes-infos-description">
+                  Parc National des Calanques
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="booki-activites-carte">
+            <a href="#" class="booki-activites-cartes-1">
+              <div class="booki-activites-cartes-img">
+                <img
+                  src="./images/activites/4_small/notre-dame-de-la-garde.jpg"
+                  alt="image notre dame de la garde"
+                />
+              </div>
+              <div class="booki-activites-cartes-infos">
+                <p class="booki-activites-cartes-infos-description">
+                  Notre-Dame-de-la-Garde
+                </p>
+              </div>
+            </a>
+            <a href="#" class="booki-activites-cartes-2">
+              <div class="booki-activites-cartes-img">
+                <img
+                  src="./images/activites/4_small/parc-longchamp.jpg"
+                  alt="image parc-longchamp"
+                />
+              </div>
+              <div class="booki-activites-cartes-infos">
+                <p class="booki-activites-cartes-infos-description">
+                  Parc Longchamp
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!--Section 3 FIN-->
+    </main>
+    <!--Bas de page-->
+    <footer>
+      <div class="footer-list">
+        <h3>A propos</h3>
+        <ul>
+          <li>
+            <a href="#">Fonctionnement du site</a>
+          </li>
+          <li>
+            <a href="#">Conditions générales de vente</a>
+          </li>
+          <li>
+            <a href="#">Données et confidentialité</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-list">
+        <h3>Nos hébergements</h3>
+        <ul>
+          <li>
+            <a href="#">Charte qualité</a>
+          </li>
+          <li>
+            <a href="#">Soumettre votre hôtel</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-list">
+        <h3>Assistance</h3>
+        <ul>
+          <li>
+            <a href="#">Centre d'aide</a>
+          </li>
+          <li>
+            <a href="#">Nous contacter</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
